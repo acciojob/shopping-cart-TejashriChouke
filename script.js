@@ -13,7 +13,7 @@ document.getElementById('add').addEventListener('click', function() {
       const itemCell = newRow.insertCell();
       const priceCell = newRow.insertCell();
       itemCell.textContent = itemName;
-      priceCell.textContent = itemPrice.toFixed(5);
+      priceCell.textContent = itemPrice.toFixed(2);
 
       // Clear input fields
       document.getElementById('item-name-input').value = '';
