@@ -8,6 +8,30 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <label for="item-name-input">Item Name:</label>
+  <input type="text" id="item-name-input" aria-labelledby="item-name-label">
+  <label for="item-price-input">Price:</label>
+  <input type="number" id="item-price-input" aria-labelledby="item-price-label" min="0">
+  <button id="add">Add</button>
+
+  <table aria-labelledby="shopping-list-label" role="grid">
+    <caption id="shopping-list-label">Shopping List</caption>
+    <thead>
+      <tr>
+        <th id="item" scope="col">Item</th>
+        <th id="price" scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody id="shopping-list-body">
+      <!-- Table body will be dynamically populated -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total:</th>
+        <th id="total" colspan="2">0</th>
+      </tr>
+    </tfoot>
+  </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
